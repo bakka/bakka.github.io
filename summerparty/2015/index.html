@@ -1,0 +1,112 @@
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>#bakka summer party 2015</title>
+    <style type="text/css">
+      body {
+        background: #000000;
+        color: #ffffff;
+        margin: 0;
+        padding: 0;
+        font-family: ‘Lucida Sans Unicode’, ‘Lucida Grande’, sans-serif;
+        font-size: medium;
+        font-weight: bold;
+      }
+      .center {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .bg {
+        background-image: url("assets/img/bg2.jpg");
+        background-repeat:no-repeat;
+        background-position: center top;
+        background-attachment: fixed;
+        height: 100%;
+        width: 100%;
+      }
+
+      .header {
+        width: 100%;
+        height:10em;
+        color: black;
+        font-family: ‘Lucida Console’, Monaco, monospace;
+        font-weight: bold;
+        font-size: 200%; 
+      }
+
+      .content {
+        background: rgba(255, 255, 255, .75);
+        color: black;
+        width: 100%;
+        padding: 2.5em;
+        margin-bottom: 5em;
+      }
+
+      .player {
+        display: hidden;
+        float: left;
+      }
+
+      .chicken {
+        cursor: pointer;
+      }
+
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script type="text/javascript" src="assets/js/jquery.stellar.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(window).stellar({
+          horizontalScrolling: false,
+          responsive: true
+        });
+        $(".chicken").click(function() {
+          $(".player").html('<iframe width="560" height="315" src="https://www.youtube.com/embed/OvZrhdy2UdY?autoplay=1&controls=0" frameborder="0" allowfullscreen></iframe>');
+          $(".chicken").hide();
+        });
+      });
+    </script>
+  </head>
+  <body>
+
+    <div class="bg" data-stellar-background-ratio="2">
+
+      <div class="header center" data-stellar-ratio="0.5">
+        #bakka summer party 2015
+      </div>
+
+      <div class="content" data-stellar-ratio="1">
+        Årets happening, be there or be square.
+      </div>
+
+      <div class="content" data-stellar-ratio="1">
+        When:<br/>
+        Lördag 17 Augusti 2015, från 14:00
+      </div>
+
+      <div class="content" data-stellar-ratio="1">
+        Where:<br/>
+        Rålambshovsparken
+      </div>
+
+      <div class="content" data-stellar-ratio="1">
+        Regnar det så får vi la göra nått annat.
+      </div>
+
+    </div>
+
+    <div class="center">
+      <div class="player">
+      </div>
+      <pre class="chicken">
+   \\
+   (o< bakka
+\\_//)
+ \_/_)
+  _|_</pre>
+    </div>
+
+  </body>
+</html>
